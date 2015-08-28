@@ -142,7 +142,3 @@ var drawCar = function(processingInstance) {
             
         }};
 
-    // Get the canvas that Processing-js will use
-    var canvas = document.getElementById("mycanvas"); 
-    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-    var processingInstance = new Processing(canvas, drawCar); 
