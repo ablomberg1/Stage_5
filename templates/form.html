@@ -1,0 +1,32 @@
+{% extends "index_Stage5.html" %}
+
+{% block content %}
+
+<br>
+<span class="error" style="color: red" >{{ error }}</span>
+<br>
+
+<form method="post" action="/">  
+	<h3>Please leave feedback on the notes</h3>
+	<input type="text" name="comment">
+	{% if comment %}
+		{% for comment in comments %}
+		<input type="hidden" name="comment" value="{{ comment }}">
+		{% endfor %}
+	{% endif %}
+	<input type='submit'>
+
+
+	{% if comment %}
+		<h2>Comments</h2> 
+ 			<ul> 
+ 			{% for comment in comment %} 
+ 				<li>{{ comment.comment }}</li> 
+ 			{% endfor %} 
+ 			</ul> 
+	{% endif %} 
+	
+
+</form>
+
+{% endblock %} 
