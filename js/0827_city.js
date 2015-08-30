@@ -5,82 +5,107 @@ var drawCar = function(processingInstance) {
         size(w, h); 
         frameRate(30);
         
-        // position of the car
+        /// car in motion
         var x = 10; 
-        var y = 135;
+        var y = 150;
         var wheelSize = 24;  
-        var carfront = 10; 
-     
+        var carfront = 10;
+        
+        //w and h of screen
+        var w = 600;
+        var h = 200;
+        
+        //rest of the city
+        var v = 10;
+        var wl = 2;  //ss window length
+        var wh = 3;  //ss window height
+        var sx = 180; //spaceship x coordinate
+        var sy = 35; //spaceship y coordinate
+           
+        
         var draw = function(){
             background(0, 0, 0); 
-            //add random stars
-
-        // spaceship
-        fill(247, 242, 242);
-        noStroke();
-        ellipse(180,30,50,20);
-        ellipse(180,20,10,10);
-        fill(255, 0, 0);
-        ellipse(180,20,3,3);
-        fill(230, 230, 18);
-        triangle(160,35,130,125,145,130);
-        triangle(180,35,170,130,190,130);
-        triangle(200,35,210,130,235,125);
-        fill(0,0,0);
-        for (var z=1;z<6; z++) {
-            rect(155+(z*5),29+(z*1.25),2,3);
-            rect(205+(z*-5),29+(z*1.25),2,3);
-        }
             
-        // draw the skyline
-        stroke(255,255,255);
-        fill(140, 140, 140);
-        rect(0,30,30,101); //building 1
-        rect(30,40,20,91); //building 2
-        rect(50,80,20,51);  //building 3
-        rect(70,20,20,111);  //building 4
-        line(80,10,80,20);
-        fill(240, 217, 9);
-        stroke(240, 217, 9);
-        ellipse(80,10,3,3);
-
-        noFill();
-        stroke(0,0,0);
-
-        //buiding 2
-        for (var c=1; c<6; c++) {
-            fill(0, 0, 0);
-            rect(33,45+(c*16),6,3);
-            rect(42,38+(c*16),5,3);
-        }
-        //buiding 1&4
-        for (var c=1; c<17; c++) { //rows
-            for (var r=1;r<4; r++) { //columns
-                rect(r*5,35+(c*6),2,3);
-                if (r<3) {
-                rect((r*5)+15,35+(c*6),2,3);
+            // spaceship
+            fill(247, 242, 242);
+            noStroke();
+            ellipse(sx,sy-5,sy+15,sy-15);
+            ellipse(sx,v*2,v,v);
+            fill(255, 0, 0);
+            ellipse(sx,v*2,v*0.3,v*0.3);
+            fill(230, 230, 18);
+            triangle(sx-20,sy,sx-50,sx-55,sx-35,sx-50);
+            triangle(sx,sy,sx-10,sx-50,sx+10,sx-50);
+            triangle(sx+20,sy,sx+30,sx-50,sx+55,sx-55);
+            fill(0,0,0);
+            for (var z=1;z<6; z++) {
+                rect(155+(z*5),29+(z*1.25),wl,wh);
+                rect(205+(z*-5),29+(z*1.25),wl,wh
+                );
             }
-                rect(r*5+70,25+(c*6),2,3);
+            
+            //buildings
+            var bw = 20;
+            var bh = 130;    
+            
+            // draw the skyline
+            stroke(255,255,255);
+            fill(140, 140, 140);
+            rect(bw-20,bh-100,bw+10,bh-29); //building 1
+            rect(bw+10,bh-90,bw,bh-39); //building 2
+            rect(bw+30,bh-50,bw,bh-79);  //building 3
+            rect(bw+50,bh-110,bw,bh-19);  //building 4
+            line(bw+60,bh-120,bw*4,bh-110);
+            
+            fill(240, 217, 9);
+            stroke(240, 217, 9);
+            ellipse(bw+60,bh-120,v*0.3,v*0.3);
+
+            noFill();
+            stroke(0,0,0);
+
+            //buiding 2
+            for (var c=1; c<6; c++) {
+                fill(0, 0, 0);
+                rect(bw+13,45+(c*16),wl*3,wh);
+                rect(bw*2.2,38+(c*16),wl*2.5,wh);
             }
-        }
+            //buiding 1&4
+            for (var c=1; c<17; c++) { //rows
+                for (var r=1;r<4; r++) { //columns
+                    rect(r*5,35+(c*6),wl,wh);
+                    if (r<3) {
+                    rect((r*5)+15,35+(c*6),wl,wh);
+                }
+                    rect(r*5+70,25+(c*6),wl,wh);
+                }
+            }
 
-
+            var homex = 200;
+            var homey = 100;
+            var homesize = 30;
+            
             // draw homes
             stroke(0, 9, 255);
             fill(255, 0, 0);
-            rect(180,120,10,10);
+            rect(homex,homey,homesize,homesize); //home 1
             fill(237, 233, 14);
-            rect(215,120,10,10);
+            rect(homex+35,homey,homesize,homesize); //home 2
             fill(255, 94, 0);
-            rect(230,120,10,10);
+            rect(homex+70,homey,homesize,homesize);  //home 3
             fill(135, 106, 89);
-            triangle(200,120,205,115,210,120);
-            triangle(215,120,220,115,225,120);
-            triangle(230,120,235,115,240,120);
-            // fill(255,255,255);
+            triangle(homex,homey,homex+15,homey-15,homex+30,homey); //home 1
+            triangle(homex+35,homey,homex+50,homey-15,homex+65,homey);  //home 2
+            triangle(homex+70,homey,homex+85,homey-15,homex+100,homey);  //home 3
 
 
-            
+       
+                fill(0,0,0);
+            for (var ww = 1; ww<20; ww=ww+3.5) {
+                for (var d = 0; d<3;d++){
+            rect(homex+(ww*5), homey+5, wl*2, wh*2); //house windows
+            rect(homex+12+(d*36),homey+20,wl*2.5,wh*4); //house doors
+            }}
 
             // draw the road & grass
             fill(0,250,0);
@@ -88,10 +113,14 @@ var drawCar = function(processingInstance) {
             rect(0,171,w,h);
             fill(150,150,150);
             stroke(0,0,0);
-            rect(0,131,w,40);
-            for (var i=0; i<w; i=i+40) {
-                line(i,150,i+20,150);
-            }
+            rect(0,151,w,40);
+        for (var i=0; i<w; i=i+40) {
+            line(i,170,i+20,170);
+        }
+            fill(0,250,0);
+            stroke(0,0,0);
+            rect(0,191,w,h);
+            rect(0,131,w,20);
             
 
 
@@ -105,10 +134,10 @@ var drawCar = function(processingInstance) {
             // draw the car body
             noStroke();
             fill(255, 0, 115);
-            rect(x + 15, y*7/10, carfront*5.2, carfront*4,carfront*.7); //top
+            rect(x + 15, y*2.9/4, carfront*5.2, carfront*4,carfront*.7); //top
             rect(x, y-2, carfront*10, carfront*2,carfront*1.5); //bottom
             stroke(255, 0, 0);
-            line(x+65,y*7/10,x+90,carfront*13.5);
+            line(x+65,y*2.9/4,x+93,carfront*14.8);
       
 
             // draw the wheels

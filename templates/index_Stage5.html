@@ -6,7 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="css/bootstrap.css" rel="stylesheet" />
 
-  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+  <!-- // <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>  -->
+  <script src = "js/processing.min.js"></script>
   <script "text/javascript" src="js/0827_city.js"></script>
   
 </head>
@@ -336,23 +337,23 @@
       <h2>Lesson 1: Introduction to Javascript</h2>
       <div class= "concept">
         <h2 class="concept-title">What is Javascript</h2>
-        <div class= "concept-description"><p>Javascript is a progrmming language that is used to make web pages interactive. It is a way to impact elements within HTML.  The Javascript Basics class introduced the console for a quick check of the code.   It is interesting how many programming languages have a similar structure/format making learning each a little simpler; for instance using var to define variables, the use of arrays, if or while loops.  Data can be manipulated in Javascript just like we did in the Resume Builder of the Javascript course.  Animation can be added, resizing of pictures, movement, interaction with the user through buttons and mouse clicks just to name a few.  Javascript seems to be limited only by your imagination.  While I am not a very creative person, I very much enjoyed building my little city that can be seen at the bottom of this webpage.  It shows off a few of the capabilities of Javascript including CSS styling inside the script tags, animation of the car, more about functions, animation or draw loops, elements, class id and a how to draw shapes.  Almost felt like a child building my first Legos city, lots of missteps but absolute joy when I saw the car cross the screen on my webpage for the first time.</p>
+        <div class= "concept-description"><p>Javascript is a progrmming language that is used to make web pages interactive. It is a way to impact elements within HTML.  The Javascript Basics class introduced the console for a quick check of the code.  This section made me aware how many programming languages have a similar structure/format making learning each a little simpler; for instance defining variables (var in JS vs def in Python), the use of arrays, if or while loops.  Data can be manipulated in Javascript just like we did in the Resume Builder of the Javascript course.  Animation can be added, resizing of pictures, movement, interaction with the user through buttons and mouse clicks just to name a few.  Javascript seems to be limited only by your imagination.  While I am not a very creative person, I very much enjoyed building my little city that can be seen at the bottom of this webpage.  It shows off a few of the capabilities of Javascript including CSS styling inside the script tags, animation of the car, more about functions, animation or draw loops, elements, class id and a how to draw shapes.  Almost felt like a child building my first Legos city, lots of missteps but absolute joy when I saw the car cross the screen on my webpage for the first time.</p>
         </div>
       </div>
       <div class= "concept">
-        <h2 class="concept-title">Build a Resume</h2>
-        <div class= "concept-description"><p>Resumes are not fun to create but in this case it was interesting to learn how to build one using Javascript.  Mine can be viewed <a href ="https://github.com/ablomberg1/frontend-nanodegree-resume.git"> here</a> in Github </p><p>Included in the resume is the option to change my name to an international standard of having the last name appear in all capital letters.  There is a button that allows the user to make the change.  Another cool piece is the map which highlights all the cities I have worked and lived in that were included in my resume.  Google Map is used and the functionality of zooming in, out and panning all directions is carried onto the resume.</p>
+        <!--https://www.udacity.com/course/viewer#!/c-ud804/l-1946788554/e-3471338563/m-2288608556-->
+        <h2 class="concept-title">JavaScript Basics - Build a Resume</h2>
+        <div class= "concept-description"><p>Resumes are not fun to create but in this case it was a great way to start learning Javascript.  Mine can be viewed <a href ="https://github.com/ablomberg1/frontend-nanodegree-resume.git"> here</a> in Github </p><p>Included in the resume is the option to change my name to an international standard of having the last name appear in all capital letters.  There is a button that allows the user to make the change.  Another cool piece is the map which highlights all the cities I have worked and lived in that were included in my resume.  Google Map is used and the functionality of zooming in, out and panning all directions is carried onto the resume.</p>
         </div>
       </div>
       <div class= "concept">
-        <h2 class="concept-title">Animation</h2>
         <!--https://khanacademy.org and https://processingjs.org -->
-        <div class= "concept-description"><p>I completed the Udacity Javacript class but wanted to learn more about the animation and understand more about how to create a js file that was captured in my HTML. To this end I took the KhanAcademy Javascript course and most of the HTML/JS: Making webpages interactive course.  Between the two I learned that some elements like rect, triangle, arc are viewable on a web page when utilizing processingjs and canvas. The mouse strokes can be used in Javascript to track what users click on or allow the user to draw on the page. Mathmatical operators can be used in js. I used some in an attempt to stay away from 'majic numbers'. What I found was that it seemed more confusing in some case to have so many fractions of or multiples of a variable when working on the code. So I need to learn more about better ways to get around the 'majic'.  For now the code looks messy  (in my opinion), although I do understand the idea behind using variables to make updates simpler.</p>
+        <h2 class="concept-title">Animation</h2>        
+        <div class= "concept-description"><p>I completed the Udacity Javacript class but wanted to learn more about the animation and understand more about how to create a js file that was captured in my HTML. To this end I took the KhanAcademy Javascript course and most of the HTML/JS: Making webpages interactive course.  Between the two I learned how to find and update DOM elements by tag, class name, or CSS selector; that drawing type elements like rect, triangle, arc are viewable on a web page when utilizing processingjs and canvas. How to use event listener with mouse strokes in Javascript, mouseX and mouseY, to track what users click on or allow the user to draw on the page. Mathmatical operators can be used in js. I used some in an attempt to stay away from 'majic numbers'. This seemed more confusing in some cases to have so many fractions of or multiples of a variable when working on the code. So I need to learn more about better ways to get around the 'majic'.  For now the code looks messy  (in my opinion), although I do understand the idea behind using variables to make updates simpler.</p><p>Processing.js makes it possible to include animation created in Javascript on a webpage like this one.  It was as simple as downloading the processing.js file, accessing it in the HTML head section, defining the global variables, create a draw function in js which includes the animation, and pass the function in the HTML script tag.</p>
         </div>
       </div>
       <div class= "concept">
         <h2 class="concept-title">Animation and Interaction</h2>
-        <!-- https://en.wikipedia.org/wiki/Abstraction -->
         <div class= "concept-description"><p>Here is a miniature city created using JavaScript animation and processingjs on canvas.</p>
           <p align="center"> 
           <!--This draws the Canvas on the webpage -->
@@ -369,9 +370,9 @@
 
 <script>
 
-  // Get the canvas that Processing-js will use
+  
   var canvas = document.getElementById("mycanvas"); 
-  // Pass the function to Processing's constructor.
+  
   var processingInstance = new Processing(canvas, drawCar); 
 </script>
 
