@@ -6,9 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="css/bootstrap.css" rel="stylesheet" />
 
-  <!-- // <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>  -->
   <script src = "js/processing.min.js"></script>
-  <script "text/javascript" src="js/0827_city.js"></script>
+  <script src="js/0827_city.js"></script>
   
 </head>
 <body>
@@ -59,7 +58,7 @@
       <h2>Lesson 1: Webpages, Documents, and Structures</h2>
       <div class= "concept">
         <h2 class="concept-title">Basics of the Web and HTML</h2>
-      <!--http://en.wikipedia.org/wiki/HTML-->
+        <!--http://en.wikipedia.org/wiki/HTML-->
         <div class= "concept-description"><p>HTML <em>hyper text markup language</em> is a computer language used to create web pages on the Internet.  The Internet uses HTTP to transmit data to and from servers.  HTML is the heart of the web and includes documents is made up of text content (what you see), markup (what content looks like), references to images and videos, other documents and links to other pages.</p><p>HTML is made up of elements.  An element consists of &lt;opening tags&gt; content and &lt;closing tags&gt;. Remember, computers are not stupid they are sensitive.  Computers do exactly as the computer programmers tell them.</p>
         </div>
       </div>
@@ -70,18 +69,16 @@
       </div>
       <div class= "concept">
         <h2 class="concept-title">Whitespace</h2>
-      <!--http://en.wikipedia.org/wiki/Span_and_div-->
+        <!--http://en.wikipedia.org/wiki/Span_and_div-->
         <div class= "concept-description"><p>There are Inline and Block elements.   br = break in the line is an Inline element, p = paragraph which is used around the text and is a Block element. Text can be on one or multiple lines and is dependent on which type of tag is used.</p><b>Inline:</b> &lt;br&gt;, &lt;em&gt; <em>(italic)</em>, &lt;img&gt;, &lt;a&gt;, &lt;strong&gt;<br><b>Block:</b> &lt;span&gt;, &lt;p&gt;, &lt;div&gt;, &lt;form&gt;<br><b>Container Elements:</b> store stuff inside them<br><p> &lt;Span&gt; represents an inline element.  Span is like words within a sentence. <span>All text remains in one line.</span> But when changed to div the content is now block.</p>
         </div>
       </div>
       <div class= "concept">
         <h2 class="concept-title">Structure of an HTML Document</h2>
         <div class= "concept-description"><p>An HTML Document has a basic structure with a head which includes the meta-data, java script, css and title.  The body of the document contains all the data and images, what is considered the insteresting stuff, the contents of the document. These two sections are found within the opening and closing html tags.</p>
-          <div class=image>
-            <div class="html-structure.jpg"><img src="images/html-structure.jpg" alt="html structure">
-            </div>
+          <div class="image"><img src="images/html-structure.jpg" alt="html structure">
           </div>
-        <p>&lt;!DOCTYPE HTML&gt;  designates what kind of HTML is used and is listed before the opening html.</p>
+          <p>&lt;!DOCTYPE HTML&gt;  designates what kind of HTML is used and is listed before the opening html.</p>
         </div>
       </div>
     </div>
@@ -162,28 +159,30 @@
       </div>
       <div class= "concept">
         <h2 class="concept-title">Getting Started with Python</h2>
-      <!--http://en.wikipedia.org/wiki/Python_(programming_language)-->
+        <!--http://en.wikipedia.org/wiki/Python_(programming_language)-->
         <div class= "concept-description"><p>Python can be run directly using a web browser.  Type the code, click run and a Python interpreter converts your code into a set of instructions for the computer to execute. These results are shown at the bottom of the screen. </p>
         </div>
       </div>
       <div class= "concept">
         <h2 class="concept-title">Grammar and Ambiguity</h2>
-        <div class= "concept-description"><p>Programming languages which have strict rules, are used instead of English because the English language is ambiguous. The example of biweekly was used.  Biweekly has several definitions which would cause an error when processed with a computer.  Errors indicate the structure of the code is inconsistent with the programming language rules.</p><p><b>Backus-Naer Form</b> is a style of writing written by John Backus, the Fortran lead designer at IBM. Backus-Naer Form is used to create a precise programming language.  The structure is &lt;non-terminal&gt; --> replacement.</p><p><b>English Grammar:</b><br>Sentence --> Subject Verb Object<br>Subject --> Noun<br>Object -->Noun<br>Verb --> eat, like (terminal)<br>Noun --> I Python cookies (terminal)</p><img src="images/Backus-Naur_Form.png" alt="terminal diagram">
+        <div class= "concept-description"><p>Programming languages which have strict rules, are used instead of English because the English language is ambiguous. The example of biweekly was used.  Biweekly has several definitions which would cause an error when processed with a computer.  Errors indicate the structure of the code is inconsistent with the programming language rules.</p><p><b>Backus-Naer Form</b> is a style of writing written by John Backus, the Fortran lead designer at IBM. Backus-Naer Form is used to create a precise programming language.  The structure is &lt;non-terminal&gt; --> replacement.</p><p><b>English Grammar:</b><br>Sentence --> Subject Verb Object<br>Subject --> Noun<br>Object -->Noun<br>Verb --> eat, like (terminal)<br>Noun --> I Python cookies (terminal)</p>
+          <div class="image"><img src="images/Backus-Naur_Form.jpg" alt="terminal diagram">
+          </div>
         </div>
       </div>
       <div class= "concept">
-        <h2 class="concept-title">Expressions</h2>
+         <h2 class="concept-title">Expressions</h2>
         <div class= "concept-description"><p>First lesson was to enter print 3, select run and the interpreter provided the result of 3. This is A Python expression.  Another example is <em>print 3*7*4*7</em> (adding spaces is ok to make it more legible), results in 588. Parentheses can be used to change the expression value: <em>print 52*3+12*9</em> the result is 264 and <em>print 52*(3+12)*9</em> the result is 7020. An invalid express would be <em>print 3 + 2 +</em> where there is an operator at the end, there must be a number.</p>   
         </div>
       </div>
     </div>
     <div class= "lesson">
-      <h2>Lesson 2: Variables and Strings</h2>
+       <h2>Lesson 2: Variables and Strings</h2>
       <div class= "concept">
         <h2 class="concept-title">Variables</h2>
         <div class= "concept-description"><p>Variables make programs simpler to understand.  The program uses the same expression changing the value of the variable to compute different things.  This is much simpler than searching thru the code for each instance. Programmers create a name and use that name to refer to a variable, this is called an assignment statement: Name = Expression.  An expression is assigned to a name using an assignment statement.  The same expression can have different meanings at different times depending on when it is evaluated.  A name can be any sequence of letters and numbers as long as it starts with a letter or underscore.</p><p>Variables are useful because they are easy to remember thus improving code readability, their values are easily changed and variables are a simple way to store values.</p>
         </div>
-      </div>
+        </div>
       <div class= "concept">
         <h2 class="concept-title">Is = really equal?</h2>
         <div class= "concept-description"><p>'=' does not mean the same thing as 'equal'.  '=' is an assignment.  A value (expression) is assigned to a name, it takes the value of the expression.  In the equation 2 + 3 = 5 the sum of the left side is the same as the value on the right, this is an equation. My_name = 'Audrey' is an assignment. The expression on the right is assigned to the name on the left side of the '='.</p>
@@ -191,18 +190,25 @@
       </div>
       <div class= "concept">
         <h2 class="concept-title">Strings</h2>
-        <div class= "concept-description"><p>Strings are a sequence of characters surrounded by quotes.  This can be double or single quotes, but must be the same on both ends. Strings cannot be added to an integer but may be multiplied by one.</p><br><img src="images/String_example.png" alt="Example of string code"><p>The number 2 is handled differently than the string "2". Code 2 + 2 produces a result of 4 while "2" + "2" produces "22".</p>
+        <div class= "concept-description"><p>Strings are a sequence of characters surrounded by quotes.  This can be double or single quotes, but must be the same on both ends. Strings cannot be added to an integer but may be multiplied by one.</p><br>
+          <div class = "image"><img src="images/String_Example.jpg" alt="Example of string code">
+          </div>
+          <p>The number 2 is handled differently than the string "2". Code 2 + 2 produces a result of 4 while "2" + "2" produces "22".</p>
         </div>
       </div>
       <div class= "concept">
         <h2 class="concept-title">Indexing Strings</h2>
-        <div class= "concept-description"><p>We can extract subsequences from strings.  This cannot be done with variables. &lt;string&gt; [&lt;expression&gt;], the expression is a number.  The characters in a string are indexed from zero.  The first letter is zero, 2nd is 1, etc.  A subsequence of characters in a string begin from position start and end with position stop-1.  &lt;string&gt; [&lt;expression&gt;:&lt;expression&gt;]</p><br><img src="images/Index_example.png" alt="Examples of Indexes">
+        <div class= "concept-description"><p>We can extract subsequences from strings.  This cannot be done with variables. &lt;string&gt; [&lt;expression&gt;], the expression is a number.  The characters in a string are indexed from zero.  The first letter is zero, 2nd is 1, etc.  A subsequence of characters in a string begin from position start and end with position stop-1.  &lt;string&gt; [&lt;expression&gt;:&lt;expression&gt;]</p><br>
+          <div class = "image"><img src="images/Index_Example.jpg" alt="Examples of Indexes">
+          </div>
         </div>
       </div>
       <div class= "concept">
         <h2 class="concept-title">Finding Strings in Strings</h2>
-        <!--http://wisdomquotes.org/famous.php-->
-        <div class= "concept-description"><p>Provides a way to find a sub string within a large string; find is a method. Finding strings in strings &lt;string&gt;.find(&lt;string&gt;) will provide the first occurrence in the search string where the target string appears. The parameter is the string and/or number inside the parenthesis of a find statement. A -1 result indicates the target string is not found and case does matter.</p><br><b>Example: quote by Anitole France</b><br>france = 'An education is not how much you have committed to memory, or even how much you know. It is being able to differentiate between what you do know and what you do not know.'<br><img src="images/find_example.png" alt="Examples of Find">
+          <!--http://wisdomquotes.org/famous.php-->
+        <div class= "concept-description"><p>Provides a way to find a sub string within a large string; find is a method. Finding strings in strings &lt;string&gt;.find(&lt;string&gt;) will provide the first occurrence in the search string where the target string appears. The parameter is the string and/or number inside the parenthesis of a find statement. A -1 result indicates the target string is not found and case does matter.</p><br><b>Example: quote by Anitole France</b><br>france = 'An education is not how much you have committed to memory, or even how much you know. It is being able to differentiate between what you do know and what you do not know.'<br>
+          <div class="image"><img src="images/Find_Example.jpg" alt="Examples of Find">
+          </div>
         </div>
       </div>
     </div>
@@ -210,170 +216,201 @@
       <h2>Lesson 3: Input -&gt;Function -&gt; Output</h2>
       <div class= "concept">
         <h2 class="concept-title">Using Procedures</h2>
-        <!--http://www.webopedia.com/TERM/F/function.html-->
-        <!--http://www.bogotobogo.com/python/python_functions_def.php-->
-        <div class= "concept-description"><p>A function is a procedure that performs a task or routine and returns a value.  There are two types of functions, built in and those you can create yourself.  Find, which was used in the prior lesson, is a built in function.</p><br><img src="images/function_format.png" alt="Format of a Function"><p>All functions begin with def (define).  The def header is followed by a function name and indicates the number of input values to be expected.</p><br><img src="images/function_example.png" alt="Example Function"><p>The function is used, or executes a return statement when a procedure is called.  The interpreter jumps int to the body of the procedure to run the code and will assign the string to the parameters, the values are passed in as inputs.  'a' is now the value passed in, which is 'audacity'.   Return jumps back to where the procedure was called and provides the output or value for name.  Without the return statement nothing is returned, the result is None.</p><br><img src="images/function_results.png" alt="Results of Function"><p>Functions are valuable because they reduce repetition in code because they are reusable.</p>
+          <!--http://www.webopedia.com/TERM/F/function.html-->
+          <!--http://www.bogotobogo.com/python/python_functions_def.php-->
+        <div class= "concept-description"><p>A function is a procedure that performs a task or routine and returns a value.  There are two types of functions, built in and those you can create yourself.  Find, which was used in the prior lesson, is a built in function.</p><br>
+          <div class="image"><img src="images/Function_format.jpg" alt="Format of a Function">
+          </div>
+          <p>All functions begin with def (define).  The def header is followed by a function name and indicates the number of input values to be expected.</p><br>
+          <div class = "image"><img src="images/Function_Example.jpg" alt="Example Function">
+          </div>
+          <p>The function is used, or executes a return statement when a procedure is called.  The interpreter jumps int to the body of the procedure to run the code and will assign the string to the parameters, the values are passed in as inputs.  'a' is now the value passed in, which is 'audacity'.   Return jumps back to where the procedure was called and provides the output or value for name.  Without the return statement nothing is returned, the result is None.</p><br>
+          <div class="image"><img src="images/Function_results.jpg" alt="Results of Function">
+          </div>
+          <p>Functions are valuable because they reduce repetition in code because they are reusable.</p>
+          </div>
+        </div>
+      </div>
+      <div class= "lesson">
+        <h2>Lesson 4: Decisions and Repetitions</h2>
+        <div class= "concept">
+          <h2 class="concept-title">Making Decisions</h2>
+          <div class= "concept-description"><p>When making decisions the following format is used:</p><br>
+            <div class = "image"><img src="images/Decision_making.jpg" alt="Decision Making format">
+            </div>
+            <p>The boolean value is either True or False when evaluating the equation.  For instance 3&gt;2 returns True and 3&lt;2 returns False because 3 is not less than 2.</p><p>The double equal == is used when making decisions because a single equal means assignment.  name = 'Fred', the word 'Fred' is assigned to name.</p>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">If and While</h2>
+          <div class= "concept-description"><p>If statements control which code is executed and when.  This code can be expanded to use else.  When the if statement is true the block of code beneath the if statement is executed. When the if statement is false the else statement is processed next.<br>
+            <div class = "image"><img src="images/If_Else_example.jpg" alt="Example of if and else">
+            </div>
+            <p>While loops perform the same task many times.  This could be a set number of times or until the computer runs out of power or memory.<br>
+              <div class = "image"><img src="images/Compare_if_while.jpg" alt="Compare run times of If and While">
+              </div>
+              <br><br><b>While Example</b><br>
+              <div class = "image"><img src="images/while_example.jpg" alt="Compare run times of If and While">
+              </div>
+            </p><p><b>Break</b><br>Break statements will stop the loop even when the condition is true. A break Test expression checks whether it is time to take a break or jump out of the while loop. If the break test is false, the system continues on thru the while loop, if true the system will stop executing the while loop and continue with the code after the while loop.</p><br>
+            <div class="image"><img src="images/break_example.jpg" alt="Example of Break">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class= "lesson">
+        <h2>Lesson 5: Structured Data: Lists and For Loops</h2>
+        <div class= "concept">
+          <h2 class="concept-title">Structured Data</h2>
+          <!--http://www.webopedia.com/TERM/S/structured_data.html-->
+          <div class= "concept-description"><p>Structured data is organized in a fixed field. A string or list is structured data. Strings are a sequence of variables like a name or word.  A list is a sequence of anything, letters, words, numbers or characters.  Lists are more powerful than strings.</p><p>Nested Lists are lists within lists, for example mixed_up['apple',3,'oranges',2,['alpha','beta']].  ['alpha','beta'] is nested within the mixed_up list.</p>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">Mutation and Aliases</h2>
+          <div class= "concept-description"><p><b>Mutable</b><br>Lists are mutable meaning they may be changed after being created. The string is not modified it actually changes the value of the string by creating a new string.  One thing to be cautious of is other variables that refer to that object.</p><p><b>Alias</b><br>Aliases have 2 different ways to refer to the same object. The example provided in class was James Bond is also known as '007'.  Whatever happens to that person referred to as James Bond also happens to '007', the agent is the spy.</p><p><b>Note:</b> you cannot mutate the value of a number.</p>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">Append and '+'</h2>
+          <div class= "concept-description"><p><b>Append</b><br>Append is a method, like a procedure, used similarly to the way we use find.  &lt;list&gt;.append(&lt;element&gt;). the object is appended in or added to the list.</p><p><b>'+'</b><br>'+' is similar to concatenation, adding the lists together to create one list.</p><p><b>len</b><br>len - length, works for any object that is a collection of things. len counts the number of elements in a list.</p>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">For Loop</h2>
+          <div class= "concept-description"><p>Loops are a collection of things.  The for loop is a simpler way to cycle thru all the elements in a list than to use a while loop with len.  It is used when you have a section of code you want to repeat n number of times.  For loop format is:</p><br> &lt;name&gt; in &lt;list&gt;:<br><pre>    &lt;block&gt;</pre>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">Index and In</h2>
+          <div class= "concept-description"><p><b>Index</b><br>Index is a built in procedure. &lt;list&gt;.index(&lt;value&gt;) Index returns the first positon where &lt;value&gt; is found in &lt;list&gt; but will not provide a -1 if the value is not found, it will result in an error i.e.'3 is not in list' if looking for the value of 3.</p><p><br><b>In</b><br>In is another way to find a value within a list. &lt;value&gt;in&lt;list&gt;.  If the &lt;value&gt; is in the &lt;list&gt;, output is True, otherwise the output is False.  Another way to use in is &lt;value&gt;not in&lt;list&gt; which is the same as not &lt;value&gt;in&lt;list&gt; but is more in line with how it would be said in English.</p>
+          </div>
+          <div class="home">
+            <spam><a href="#Home">back to top</a></spam>
+          </div>
         </div>
       </div>
     </div>
-    <div class= "lesson">
-      <h2>Lesson 4: Decisions and Repetitions</h2>
-      <div class= "concept">
-        <h2 class="concept-title">Making Decisions</h2>
-        <div class= "concept-description"><p>When making decisions the following format is used:</p><br><img src="images/decision_making.png" alt="Decision Making format"><p>The boolean value is either True or False when evaluating the equation.  For instance 3&gt;2 returns True and 3&lt;2 returns False because 3 is not less than 2.</p><p>The double equal == is used when making decisions because a single equal means assignment.  name = 'Fred', the word 'Fred' is assigned to name.</p>
+    <div class="stage">
+      <h1 id="lesson-3">Stage 3: Abstraction</h1>
+      <div class= "lesson">
+        <h2>Object Oriented Programming</h2>
+        <!--http://en.wikipedia.org/wiki/Object-oriented_programming-->
+        <!--http://www.merriam-webster.com/dictionary/object-oriented%20programming-->
+        <!--https://docs.python.org/2/tutorial/modules.html?highlight=module-->
+        <div class= "concept">
+          <h2 class="concept-title">What is Object Oriented Programming?</h2>
+          <div class= "concept-description"><p>Object Oriented Programming (OOP) is a programming language that is based on objects which can be applied in a modular fashion. Objects are data structures that contain data.  A programmer is able to manipulate objects and identify how they relate to each other.  They are arranged in a hierarchy where a single object can be used in many different but related ways. One example is the fish vs salmon lesson.  Salmon is an object (or instance) of the class fish. There are many types of fish, salmon is just one type. A specific fish, Mary, is an object as well; Mary is an object of the class salmon.</p><p>Instances are also known as objects.  An object is one instance of a class. Each distinct logic sequence, or programmed procedure, is known as a method.  There can be more than one method per object or class.  And each method only has access to the data within it's object.</p><p>OOP uses modules which contain definitions and statements.  There are built-in modules that can be imported and used in Python. The Python Standard Library is a great source for modules and their definitions as well as other aspects related to Python. Another source of information for Python programmers is the Google Python Style Guide which lists language and style rules.</p>
+          </div>
         </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">If and While</h2>
-        <div class= "concept-description"><p>If statements control which code is executed and when.  This code can be expanded to use else.  When the if statement is true the block of code beneath the if statement is executed. When the if statement is false the else statement is processed next.<br><img src="images/if_else_example.png" alt="Example of if and else"><p>While loops perform the same task many times.  This could be a set number of times or until the computer runs out of power or memory.<br><img src="images/compare_if_while.png" alt="Compare run times of If and While"><br><br><b>While Example</b><br><img src="images/while_example.png" alt="Compare run times of If and While"></p><p><b>Break</b><br>Break statements will stop the loop even when the condition is true. A break Test expression checks whether it is time to take a break or jump out of the while loop. If the break test is false, the system continues on thru the while loop, if true the system will stop executing the while loop and continue with the code after the while loop.</p><br><img src="images/break_example.png" alt="Example of Break">
+        <div class= "concept">
+          <h2 class="concept-title">OOP is a Valuable Tool</h2>
+          <div class= "concept-description"><p>OOP is diverse, it provides countless way to manipulate objects. Inheritance allows for reduced repetition in programming. Objects make for simpler programming with the ability to break the program into smaller, more manageable pieces. Security is enhanced with OOP by placing data where it is not easily accessible by the rest of the system.  Also, changes made to one object will not impact another.</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class= "lesson">
-      <h2>Lesson 5: Structured Data: Lists and For Loops</h2>
-      <div class= "concept">
-        <h2 class="concept-title">Structured Data</h2>
-      <!--http://www.webopedia.com/TERM/S/structured_data.html-->
-        <div class= "concept-description"><p>Structured data is organized in a fixed field. A string or list is structured data. Strings are a sequence of variables like a name or word.  A list is a sequence of anything, letters, words, numbers or characters.  Lists are more powerful than strings.</p><p>Nested Lists are lists within lists, for example mixed_up['apple',3,'oranges',2,['alpha','beta']].  ['alpha','beta'] is nested within the mixed_up list.</p>
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Mutation and Aliases</h2>
-        <div class= "concept-description"><p><b>Mutable</b><br>Lists are mutable meaning they may be changed after being created. The string is not modified it actually changes the value of the string by creating a new string.  One thing to be cautious of is other variables that refer to that object.</p><p><b>Alias</b><br>Aliases have 2 different ways to refer to the same object. The example provided in class was James Bond is also known as '007'.  Whatever happens to that person referred to as James Bond also happens to '007', the agent is the spy.</p><p><b>Note:</b> you cannot mutate the value of a number.</p>
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Append and '+'</h2>
-        <div class= "concept-description"><p><b>Append</b><br>Append is a method, like a procedure, used similarly to the way we use find.  &lt;list&gt;.append(&lt;element&gt;). the object is appended in or added to the list.</p><p><b>'+'</b><br>'+' is similar to concatenation, adding the lists together to create one list.</p><p><b>len</b><br>len - length, works for any object that is a collection of things. len counts the number of elements in a list.</p>
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">For Loop</h2>
-        <div class= "concept-description"><p>Loops are a collection of things.  The for loop is a simpler way to cycle thru all the elements in a list than to use a while loop with len.  It is used when you have a section of code you want to repeat n number of times.  For loop format is:</p><br> &lt;name&gt; in &lt;list&gt;:<br><pre>    &lt;block&gt;</pre>
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Index and In</h2>
-        <div class= "concept-description"><p><b>Index</b><br>Index is a built in procedure. &lt;list&gt;.index(&lt;value&gt;) Index returns the first positon where &lt;value&gt; is found in &lt;list&gt; but will not provide a -1 if the value is not found, it will result in an error i.e.'3 is not in list' if looking for the value of 3.</p><p><br><b>In</b><br>In is another way to find a value within a list. &lt;value&gt;in&lt;list&gt;.  If the &lt;value&gt; is in the &lt;list&gt;, output is True, otherwise the output is False.  Another way to use in is &lt;value&gt;not in&lt;list&gt; which is the same as not &lt;value&gt;in&lt;list&gt; but is more in line with how it would be said in English.</p>
-        </div>
-        <div class="home">
-          <spam><a href="#Home">back to top</a></spam>
+        <div class= "concept">
+          <h2 class="concept-title">Connections Made to Abstract Thinking</h2>
+          <div class= "concept-description"><p>Abstract thinking is relational, being able to think about attributes and relationships separate from the objects that have those attributes or share those relationships. Object Oriented Programming uses relationships and attributes of items. HTML and CSS do the same.  This type of thinking opens up the opportunity to group data in a way that reduces code by reusing it for similar classes, concepts, etc.</p><p>An example could be how you divide or group people.  They could be divided or grouped by age, hair color, home town, or shoe size. There are endless opportunities for relating data.  Object Oriented Programming provides a hierarchical method to organize and relate data into manageable chunks of data in a way that allows for safe and easy access.</p>
+          </div>
+          <div class="home">
+            <spam><a href="#Home">back to top</a></spam>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="stage">
-    <h1 id="lesson-3">Stage 3: Abstraction</h1>
-    <div class= "lesson">
-      <h2>Object Oriented Programming</h2>
-      <!--http://en.wikipedia.org/wiki/Object-oriented_programming-->
-      <!--http://www.merriam-webster.com/dictionary/object-oriented%20programming-->
-      <!--https://docs.python.org/2/tutorial/modules.html?highlight=module-->
-      <div class= "concept">
-        <h2 class="concept-title">What is Object Oriented Programming?</h2>
-        <div class= "concept-description"><p>Object Oriented Programming (OOP) is a programming language that is based on objects which can be applied in a modular fashion. Objects are data structures that contain data.  A programmer is able to manipulate objects and identify how they relate to each other.  They are arranged in a hierarchy where a single object can be used in many different but related ways. One example is the fish vs salmon lesson.  Salmon is an object (or instance) of the class fish. There are many types of fish, salmon is just one type. A specific fish, Mary, is an object as well; Mary is an object of the class salmon.</p><p>Instances are also known as objects.  An object is one instance of a class. Each distinct logic sequence, or programmed procedure, is known as a method.  There can be more than one method per object or class.  And each method only has access to the data within it's object.</p><p>OOP uses modules which contain definitions and statements.  There are built-in modules that can be imported and used in Python. The Python Standard Library is a great source for modules and their definitions as well as other aspects related to Python. Another source of information for Python programmers is the Google Python Style Guide which lists language and style rules.</p>
+    <div class="stage">
+      <h1 id="lesson-4">Stage 4: Let Anyone Modify</h1>
+      <div class= "lesson">
+        <h2>Lesson 1: Servers</h2>
+        <div class= "concept">
+          <h2 class="concept-title">Requests</h2>
+          <div class= "concept-description"><p>A client (web browser) sends a message to the server (web server) following protocal using HTTP (Hypertext Transfer Protocol). The message sent is a GET message in the form of a URL (Uniform Resource Locator).  The URL is made up of the protocol, host and path. HTTP is the protocol, www.cnn.com is a host and / is the path (another example would be /money).  The server accepts the message and runs some code. The server then responds with the contents of the requested object.</p><p>The request from your browser begins with a request line.  The request line includes the method (type of request - most common are GET and POST), path - the actual document being requested, and version of HTTP.  Since you are already connected to the host, which indicates where we are.  The path is used for making the request.</p>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">Responses</h2>
+          <div class= "concept-description"><p>The browser makes a request to the server then the server sends back a response.  The response includes a status line which is made up of the status code and reason phrase.  Headers are included in both requests and responses.  Examples are Date and Content - Type and Length</p><br>
+            <div class="image">
+              <img src="images/Status_codes.jpg" alt="List of Status Codes">
+            </div>
+          </div>
+        </div>
+        <div class= "concept">
+          <h2 class="concept-title">Servers</h2>
+          <div class= "concept-description"><p>The purpose of a server is to respond to HTTP requests.  Documents are requested from the client via the web browser.  Static and Dynamic responses are sent from the server.  Static requests are pre-written forms or images.  Dynamic responses are made on the fly.  Most pages on the web are built dynamicly by web applications.</p>
+          </div>
         </div>
       </div>
-      <div class= "concept">
-        <h2 class="concept-title">OOP is a Valuable Tool</h2>
-        <div class= "concept-description"><p>OOP is diverse, it provides countless way to manipulate objects. Inheritance allows for reduced repetition in programming. Objects make for simpler programming with the ability to break the program into smaller, more manageable pieces. Security is enhanced with OOP by placing data where it is not easily accessible by the rest of the system.  Also, changes made to one object will not impact another.</p>
+      <div class= "lesson">
+        <h2>Lesson 2: Validation</h2>
+        <div class= "concept">
+          <h2 class="concept-title">The Importance of Validating Input</h2>
+          <div class= "concept-description"><p>Security is paramount and using the escape and autoescape functions ensures that users are not able to hack into the sytem using java or html when entering data.  Validation is a confirmation on the server side that we received what we expected to see.  Input validation will improve a site's security. Escape is used to prevent unauthorized access by entering random text or code to alter a program. Using the escape functionality can also avoid promblems with a page that could make for a poor user experience. If the user was unable to link to the page, share or recieves an empty form.  An error may require the user to reload the page in order to resubmit a form.  These can be managed thru validation and proper coding.  A redirect would make for a nicer user experience.</p>
+          </div>
         </div>
       </div>
-      <div class= "concept">
-        <h2 class="concept-title">Connections Made to Abstract Thinking</h2>
-        <div class= "concept-description"><p>Abstract thinking is relational, being able to think about attributes and relationships separate from the objects that have those attributes or share those relationships. Object Oriented Programming uses relationships and attributes of items. HTML and CSS do the same.  This type of thinking opens up the opportunity to group data in a way that reduces code by reusing it for similar classes, concepts, etc.</p><p>An example could be how you divide or group people.  They could be divided or grouped by age, hair color, home town, or shoe size. There are endless opportunities for relating data.  Object Oriented Programming provides a hierarchical method to organize and relate data into manageable chunks of data in a way that allows for safe and easy access.</p>
-        </div>
-        <div class="home">
-          <spam><a href="#Home">back to top</a></spam>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="stage">
-    <h1 id="lesson-4">Stage 4: Let Anyone Modify</h1>
-    <div class= "lesson">
-      <h2>Lesson 1: Servers</h2>
-      <div class= "concept">
-        <h2 class="concept-title">Requests</h2>
-        <div class= "concept-description"><p>A client (web browser) sends a message to the server (web server) following protocal using HTTP (Hypertext Transfer Protocol). The message sent is a GET message in the form of a URL (Uniform Resource Locator).  The URL is made up of the protocol, host and path. HTTP is the protocol, www.cnn.com is a host and / is the path (another example would be /money).  The server accepts the message and runs some code. The server then responds with the contents of the requested object.</p><p>The request from your browser begins with a request line.  The request line includes the method (type of request - most common are GET and POST), path - the actual document being requested, and version of HTTP.  Since you are already connected to the host, which indicates where we are.  The path is used for making the request.</p>
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Responses</h2>
-        <div class= "concept-description"><p>The browser makes a request to the server then the server sends back a response.  The response includes a status line which is made up of the status code and reason phrase.  Headers are included in both requests and responses.  Examples are Date and Content - Type and Length</p><br><img src="images/status_codes.png" alt="List of Status Codes">
-        </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Servers</h2>
-        <div class= "concept-description"><p>The purpose of a server is to respond to HTTP requests.  Documents are requested from the client via the web browser.  Static and Dynamic responses are sent from the server.  Static requests are pre-written forms or images.  Dynamic responses are made on the fly.  Most pages on the web are built dynamicly by web applications.</p>
+      <div class= "lesson">
+        <h2>Lesson 3: HTML</h2>
+        <div class= "concept">
+          <h2 class="concept-title">Templates and Abstraction</h2>
+          <!-- https://en.wikipedia.org/wiki/Abstraction -->
+          <div class= "concept-description"><p>HTML templates are forms that can be used repeatedly, ultimately reducing duplicate code and saving time during updates since there is only one place to make changes instead of multiple throughout the code.  This is the art of abstraction, creating models that are re-used so no rewriting is necessary.  The html templates in this course were designed to request data from the user which was then rendered in Python.</p><p>Templates inheritance allows you to have one template that includes your header and footer and sub-templates that contain the content.  The example in class showed how shopping_list.html and fizzbuzz.html inherit from base.html using a block.</p>
+          </div>
+          <div class="home">
+            <spam><a href="#Home">back to top</a></spam>
+          </div>
         </div>
       </div>
     </div>
-    <div class= "lesson">
-      <h2>Lesson 2: Validation</h2>
-      <div class= "concept">
-        <h2 class="concept-title">The Importance of Validating Input</h2>
-        <div class= "concept-description"><p>Security is paramount and using the escape and autoescape functions ensures that users are not able to hack into the sytem using java or html when entering data.  Validation is a confirmation on the server side that we received what we expected to see.  Input validation will improve a site's security. Escape is used to prevent unauthorized access by entering random text or code to alter a program. Using the escape functionality can also avoid promblems with a page that could make for a poor user experience. If the user was unable to link to the page, share or recieves an empty form.  An error may require the user to reload the page in order to resubmit a form.  These can be managed thru validation and proper coding.  A redirect would make for a nicer user experience.</p>
-        </div>
-      </div>
-    </div>
-    <div class= "lesson">
-      <h2>Lesson 3: HTML</h2>
-      <div class= "concept">
-        <h2 class="concept-title">Templates and Abstraction</h2>
-        <!-- https://en.wikipedia.org/wiki/Abstraction -->
-        <div class= "concept-description"><p>HTML templates are forms that can be used repeatedly, ultimately reducing duplicate code and saving time during updates since there is only one place to make changes instead of multiple throughout the code.  This is the art of abstraction, creating models that are re-used so no rewriting is necessary.  The html templates in this course were designed to request data from the user which was then rendered in Python.</p><p>Templates inheritance allows you to have one template that includes your header and footer and sub-templates that contain the content.  The example in class showed how shopping_list.html and fizzbuzz.html inherit from base.html using a block.</p>
-        </div>
-        <div class="home">
-          <spam><a href="#Home">back to top</a></spam>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="stage">
-    <h1 id="lesson-5">Stage 5: Javascript</h1>
-    <div class= "lesson">
-      <h2>Lesson 1: Introduction to Javascript</h2>
-      <div class= "concept">
-        <h2 class="concept-title">What is Javascript</h2>
-        <div class= "concept-description"><p>Javascript is a progrmming language that is used to make web pages interactive. It is a way to impact elements within HTML.  The Javascript Basics class introduced the console for a quick check of the code.  This section made me aware how many programming languages have a similar structure/format making learning each a little simpler; for instance defining variables (var in JS vs def in Python), the use of arrays, if or while loops.  Data can be manipulated in Javascript just like we did in the Resume Builder of the Javascript course.  Animation can be added, resizing of pictures, movement, interaction with the user through buttons and mouse clicks just to name a few.  Javascript seems to be limited only by your imagination.  While I am not a very creative person, I very much enjoyed building my little city that can be seen at the bottom of this webpage.  It shows off a few of the capabilities of Javascript including CSS styling inside the script tags, animation of the car, more about functions, animation or draw loops, elements, class id and a how to draw shapes.  Almost felt like a child building my first Legos city, lots of missteps but absolute joy when I saw the car cross the screen on my webpage for the first time.</p>
+    <div class="stage">
+      <h1 id="lesson-5">Stage 5: Javascript</h1>
+      <div class= "lesson">
+        <h2>Lesson 1: Introduction to Javascript</h2>
+        <div class= "concept">
+          <h2 class="concept-title">What is Javascript</h2>
+          <div class= "concept-description"><p>Javascript is a progrmming language that is used to make web pages interactive. It is a way to impact elements within HTML.  The Javascript Basics class introduced the console for a quick check of the code.  This section made me aware how many programming languages have a similar structure/format making learning each a little simpler; for instance defining variables (var in JS vs def in Python), the use of arrays, if or while loops.  Data can be manipulated in Javascript just like we did in the Resume Builder of the Javascript course.  Animation can be added, resizing of pictures, movement, interaction with the user through buttons and mouse clicks just to name a few.  Javascript seems to be limited only by your imagination.  While I am not a very creative person, I very much enjoyed building my little city that can be seen at the bottom of this webpage.  It shows off a few of the capabilities of Javascript including CSS styling inside the script tags, animation of the car, more about functions, animation or draw loops, elements, class id and a how to draw shapes.  Almost felt like a child building my first Legos city, lots of missteps but absolute joy when I saw the car cross the screen on my webpage for the first time.</p>
+          </div>
         </div>
-      </div>
-      <div class= "concept">
-        <!--https://www.udacity.com/course/viewer#!/c-ud804/l-1946788554/e-3471338563/m-2288608556-->
-        <h2 class="concept-title">JavaScript Basics - Build a Resume</h2>
-        <div class= "concept-description"><p>Resumes are not fun to create but in this case it was a great way to start learning Javascript.  Mine can be viewed <a href ="https://github.com/ablomberg1/frontend-nanodegree-resume.git"> here</a> in Github </p><p>Included in the resume is the option to change my name to an international standard of having the last name appear in all capital letters.  There is a button that allows the user to make the change.  Another cool piece is the map which highlights all the cities I have worked and lived in that were included in my resume.  Google Map is used and the functionality of zooming in, out and panning all directions is carried onto the resume.</p>
+        <div class= "concept">
+          <!--https://www.udacity.com/course/viewer#!/c-ud804/l-1946788554/e-3471338563/m-2288608556-->
+          <h2 class="concept-title">JavaScript Basics - Build a Resume</h2>
+          <div class= "concept-description"><p>Resumes are not fun to create but in this case it was a great way to start learning Javascript.  Mine can be viewed <a href ="https://github.com/ablomberg1/frontend-nanodegree-resume.git"> here</a> in Github </p><p>Included in the resume is the option to change my name to an international standard of having the last name appear in all capital letters.  There is a button that allows the user to make the change.  Another cool piece is the map which highlights all the cities I have worked and lived in that were included in my resume.  Google Map is used and the functionality of zooming in, out and panning all directions is carried onto the resume.</p><p>Some key learning points in the class were that JavaScript can be added to HTML within a script opening and closing tag. JS best practice is to create a separate file for JS, like python, and attach the file to your HTML with script tags in the header referencing the file path. A function is created and called in HTML.  The funciton may include for loops with a variable that iterates at a set interval until it reaches the determined number.  If and else statements are useful.  Replace(), prepend(), and append() are used to place the data or picture in a specific place on your web page.  The console.log is a great developer tool for getting a quick look at errors, a basic print method.  The semi colon is used to signal the end of a statement.Arrays can be created, they are just like lists and are zero indexed.  String.slice separates characters of a string, array.pop returns the last element of the array, array.push method adds an element to the end of an array.  There are no classes in JS, there are objects. Using dot or bracket notation you can declare an object then use a dot or brackets around the string to define the properties.  There is more but I will end with DOM Manipulation method getElementById will grap a single page elemnt object with the id given.</p><br> Reference: <a href="https://www.udacity.com/course/viewer#!/c-ud804/l-1946788554/e-3471338563/m-2288608556"> JavaScript Basics</a>
+          </div>
         </div>
-      </div>
-      <div class= "concept">
-        <!--https://khanacademy.org and https://processingjs.org -->
-        <h2 class="concept-title">Animation</h2>        
-        <div class= "concept-description"><p>I completed the Udacity Javacript class but wanted to learn more about the animation and understand more about how to create a js file that was captured in my HTML. To this end I took the KhanAcademy Javascript course and most of the HTML/JS: Making webpages interactive course.  Between the two I learned how to find and update DOM elements by tag, class name, or CSS selector; that drawing type elements like rect, triangle, arc are viewable on a web page when utilizing processingjs and canvas. How to use event listener with mouse strokes in Javascript, mouseX and mouseY, to track what users click on or allow the user to draw on the page. Mathmatical operators can be used in js. I used some in an attempt to stay away from 'majic numbers'. This seemed more confusing in some cases to have so many fractions of or multiples of a variable when working on the code. So I need to learn more about better ways to get around the 'majic'.  For now the code looks messy  (in my opinion), although I do understand the idea behind using variables to make updates simpler.</p><p>Processing.js makes it possible to include animation created in Javascript on a webpage like this one.  It was as simple as downloading the processing.js file, accessing it in the HTML head section, defining the global variables, create a draw function in js which includes the animation, and pass the function in the HTML script tag.</p>
+        <div class= "concept">
+          <!--https://khanacademy.org and https://processingjs.org -->
+          <h2 class="concept-title">Animation</h2>        
+          <div class= "concept-description"><p>I completed the Udacity Javacript class but wanted to learn about the animation and understand more about how to create a js file that was captured in my HTML. To this end I took the KhanAcademy Javascript course and most of the HTML/JS: Making webpages interactive course.  Between the two I learned more about how to find and update DOM elements by tag, class, or CSS selector; that drawing type elements like rect, triangle, arc are viewable on a web page when utilizing processingjs and canvas. How to use event listener with mouse strokes in Javascript, mouseX and mouseY, to track what users click on or allow the user to draw on the page. Mathmatical operators can be used in js. I used some in an attempt to stay away from 'majic numbers'. This seemed more confusing in some cases to have so many fractions of or multiples of a variable when working on the code. So I need to learn more about better ways to get around the 'majic'.  For now the code looks messy  (in my opinion), although I do understand the idea behind using variables to make updates simpler.</p><p>Processing.js makes it possible to include animation created in Javascript on a webpage like this one.  It was as simple as downloading the processing.js file, accessing it in the HTML head section, defining the global variables, create a draw function in js which includes the animation, and pass the function in the HTML script tag.</p><br>References: <a href = "https://www.khanacademy.org/computing/computer-programming/html-css-js"> khanacademy.org/html-css-js</a> and <a "https://www.khanacademy.org/computing/computer-programming/programming"> khanacademy.org/Intro to JS</a></div>
         </div>
-      </div>
-      <div class= "concept">
-        <h2 class="concept-title">Animation and Interaction</h2>
-        <div class= "concept-description"><p>Here is a miniature city created using JavaScript animation and processingjs on canvas.</p>
-          <p align="center"> 
-          <!--This draws the Canvas on the webpage -->
-          <canvas id="mycanvas"></canvas> 
-          </p>
+        <div class= "concept">
+          <!--https://khanacademy.org and https://processingjs.org -->
+          <h2 class="concept-title">MyCanvas with processingjs</h2>        
+          <div class= "concept-description"><p>Processing.js makes it possible to include animation and interactive animation created in processing code like Javascript on a webpage like this one. It is compatable with HTML5 browsers including the current versions of Firefox, Safari, Chrome, Opera and Internet Explorer.  It was as simple as downloading the processing.js file, accessing it in the HTML head, defining the global variables, creating a draw function in JavaScript which includes the animation, and pass the function in the HTML script tag.  The animation may have a loop for continuous movement or an exit() command. Built in functions are available including those for mouse control which tracks positions, x and y coordinates, of the mouse pointer.  The draw function is 'painted' on the canvas id tag which is called in the script portion of html. </p><br>Reference: <a href = "https://processingjs.org"> processingjs.org</a>
+          </div>
         </div>
-        <div class="home">
-          <spam><a href="#Home">back to top</a></spam>
+        <div class= "concept">
+          <h2 class="concept-title">Animation and Interaction</h2>
+          <div class= "concept-description"><p>Here is a miniature city created using JavaScript animation and processingjs on canvas.</p>
+            <p align="center"> 
+              <!--This draws the Canvas on the webpage -->
+              <canvas id="mycanvas"></canvas> 
+            </p>
+          </div>
+          <div class="home">
+            <spam><a href="#Home">back to top</a></spam>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 
-<script>
+  <script>
 
   
   var canvas = document.getElementById("mycanvas"); 
   
   var processingInstance = new Processing(canvas, drawCar); 
-</script>
+  </script>
 
-</html>
+  </html>
